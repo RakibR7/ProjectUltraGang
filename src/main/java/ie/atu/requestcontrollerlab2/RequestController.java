@@ -22,6 +22,11 @@ public class RequestController {
     public String details(@RequestParam int age, String name) {
         return "age, name" + age + name;
     }
+
+    @GetMapping("/calculate")
+    public String calculate(@RequestParam int num1, int num2) {
+        return "num1, num2" + num1 + num2;
+    }
 }
 
 
