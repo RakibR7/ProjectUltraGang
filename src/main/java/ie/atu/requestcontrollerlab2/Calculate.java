@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 public class Calculate{
-    public int add(@RequestParam int num1, @RequestParam int num2, @RequestParam String operation){
-        int add = num1+num2;
-        return add;
+    public int add(@RequestParam int num1, @RequestParam int num2){
+        int total = num1+num2;
+        return total;
     }
 }
 
